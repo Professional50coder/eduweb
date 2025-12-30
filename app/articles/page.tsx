@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { MediumFlashcard } from "@/components/medium-flashcard"
+import Navbar from "@/eduweb/components/navbar"
+import Footer from "@/eduweb/components/footer"
+import { Card } from "@/eduweb/components/ui/card"
+import { Input } from "@/eduweb/components/ui/input"
+import { MediumFlashcard } from "@/eduweb/components/medium-flashcard"
 import { Search, BookOpen } from "lucide-react"
 
 interface Post {

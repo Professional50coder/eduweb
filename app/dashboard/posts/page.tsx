@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/eduweb/components/ui/button"
+import { Card } from "@/eduweb/components/ui/card"
 import { Plus, Edit, Trash2, Eye, EyeOff, Search } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import { Input } from "@/eduweb/components/ui/input"
 
 interface Post {
   id: string

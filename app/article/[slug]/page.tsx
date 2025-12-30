@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import Navbar from "@/eduweb/components/navbar"
+import Footer from "@/eduweb/components/footer"
+import { Button } from "@/eduweb/components/ui/button"
+import { Card } from "@/eduweb/components/ui/card"
 import { Share2, Clock, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 

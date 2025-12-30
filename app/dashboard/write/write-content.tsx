@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card } from "@/components/ui/card"
-import { RichTextEditor } from "@/components/rich-text-editor"
+import { Button } from "@/eduweb/components/ui/button"
+import { Input } from "@/eduweb/components/ui/input"
+import { Card } from "@/eduweb/components/ui/card"
+import { RichTextEditor } from "@/eduweb/components/rich-text-editor"
 import { ChevronLeft, Loader2 } from "lucide-react"
 
 interface PostData {

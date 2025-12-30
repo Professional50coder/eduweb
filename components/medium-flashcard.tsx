@@ -1,5 +1,5 @@
 "use client"
-import { Card } from "@/components/ui/card"
+import { Card } from "@/eduweb/components/ui/card"
 import { ExternalLink } from "lucide-react"
 import Link from "next/link"
 

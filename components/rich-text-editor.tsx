@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/eduweb/components/ui/button"
+import { Card } from "@/eduweb/components/ui/card"
 import { Bold, Italic, List, ListOrdered, Quote, Code, Heading1, Heading2, Save, Eye } from "lucide-react"
 
 interface RichTextEditorProps {

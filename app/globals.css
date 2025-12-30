@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Light mode colors */
   --background: oklch(0.98 0 0);
   --foreground: oklch(0.15 0 0);
   --card: oklch(1 0 0);
@@ -30,55 +29,55 @@
   --chart-4: oklch(0.5 0.16 256);
   --chart-5: oklch(0.58 0.15 240);
   --radius: 0.625rem;
-  --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.15 0 0);
-  --sidebar-primary: oklch(0.5 0.16 256);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.55 0.15 260);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.55 0.15 260);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
-  /* Dark mode colors - premium dark theme */
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.12 0.01 256);
+  --background: oklch(0.06 0 0);
+  --foreground: oklch(0.96 0 0);
+  --card: oklch(0.11 0.02 260);
   --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.12 0.01 256);
+  --popover: oklch(0.11 0.02 260);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.6 0.18 260);
-  --primary-foreground: oklch(0.95 0 0);
-  --secondary: oklch(0.55 0.16 280);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.25 0.02 0);
-  --muted-foreground: oklch(0.7 0 0);
-  --accent: oklch(0.65 0.16 200);
-  --accent-foreground: oklch(0.95 0 0);
+  /* Updated primary to neon green/teal for AI consulting aesthetic */
+  --primary: oklch(0.68 0.22 145);
+  --primary-foreground: oklch(0.06 0 0);
+  /* Updated secondary to soft cyan */
+  --secondary: oklch(0.65 0.18 190);
+  --secondary-foreground: oklch(0.06 0 0);
+  --muted: oklch(0.22 0.01 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.7 0.2 150);
+  --accent-foreground: oklch(0.06 0 0);
   --destructive: oklch(0.55 0.18 25);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.2 0.01 256);
-  --input: oklch(0.15 0.01 256);
-  --ring: oklch(0.65 0.16 200);
-  --chart-1: oklch(0.6 0.18 260);
-  --chart-2: oklch(0.65 0.16 200);
-  --chart-3: oklch(0.55 0.16 280);
-  --chart-4: oklch(0.58 0.17 240);
-  --chart-5: oklch(0.62 0.17 270);
-  --sidebar: oklch(0.1 0.01 256);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.6 0.18 260);
-  --sidebar-primary-foreground: oklch(0.95 0 0);
-  --sidebar-accent: oklch(0.65 0.16 200);
-  --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.2 0.01 256);
-  --sidebar-ring: oklch(0.65 0.16 200);
+  --destructive-foreground: oklch(0.96 0 0);
+  --border: oklch(0.18 0.02 260);
+  --input: oklch(0.14 0.02 260);
+  --ring: oklch(0.68 0.22 145);
+  --chart-1: oklch(0.68 0.22 145);
+  --chart-2: oklch(0.65 0.18 190);
+  --chart-3: oklch(0.62 0.2 170);
+  --chart-4: oklch(0.7 0.19 160);
+  --chart-5: oklch(0.64 0.19 180);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,5 +122,112 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Added glassmorphism effect for cards */
+  @supports (backdrop-filter: blur(10px)) {
+    .glass {
+      background: rgba(17, 24, 39, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Smooth scroll behavior and animations */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .animate-slideInUp {
+    animation: slideInUp 700ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .animate-slideInDown {
+    animation: slideInDown 700ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .animate-fadeInScale {
+    animation: fadeInScale 700ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(
+      90deg,
+      rgba(104, 211, 145, 0.1) 0%,
+      rgba(104, 211, 145, 0.3) 50%,
+      rgba(104, 211, 145, 0.1) 100%
+    );
+    background-size: 1000px 100%;
   }
 }

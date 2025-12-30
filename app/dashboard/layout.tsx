@@ -3,7 +3,7 @@
 import type React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/eduweb/components/ui/button"
 import { LayoutDashboard, FileText, Plus, Settings, Rss, LogOut } from "lucide-react"
 
 const sidebarItems = [

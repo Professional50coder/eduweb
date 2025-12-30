@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Card } from "@/components/ui/card"
-import { MediumFlashcard } from "@/components/medium-flashcard"
+import { Card } from "@/eduweb/components/ui/card"
+import { MediumFlashcard } from "@/eduweb/components/medium-flashcard"
 import { Rss, Loader2 } from "lucide-react"
 
 interface MediumArticle {

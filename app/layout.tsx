@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "ai2easy4u - AI made simple",
   description:
     "Learn Artificial Intelligence the practical way. No jargon, no confusion. Just clear explanations, real tools, and everyday use-cases.",
-  generator: "hitansh",
+  generator: "crypto_hg",
   icons: {
     icon: [
       {

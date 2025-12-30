@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/eduweb/components/ui/button"
 import { BookOpenCheck, Wrench, Zap, AlertTriangle, ArrowRight } from "lucide-react"
 
 const learningPaths = [

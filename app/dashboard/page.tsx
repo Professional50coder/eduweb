@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/eduweb/components/ui/button"
+import { Card } from "@/eduweb/components/ui/card"
 import { Plus, FileText, Eye, Zap } from "lucide-react"
 
 interface Post {

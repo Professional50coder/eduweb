@@ -1,8 +1,8 @@
 "use client"
 
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { Card } from "@/eduweb/components/ui/card"
+import { Button } from "@/eduweb/components/ui/button"
+import { Input } from "@/eduweb/components/ui/input"
 import { SettingsIcon, Save, Zap } from "lucide-react"
 
 export default function SettingsPage() {

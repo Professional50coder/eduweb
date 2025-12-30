@@ -1,34 +1,35 @@
-import Navbar from "@/components/navbar"
-import HeroSection from "@/components/hero-section"
-import TrustStrip from "@/components/trust-strip"
-import LearningPaths from "@/components/learning-paths"
-import FeaturedContent from "@/components/featured-content"
-import EducatorSection from "@/components/educator-section"
-import CTASection from "@/components/cta-section"
-import Footer from "@/components/footer"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import AIHero from "@/eduweb/components/ai-hero"
+import AITrustStrip from "@/eduweb/components/ai-trust-strip"
+import AIProblems from "@/eduweb/components/ai-problems"
+import AIOfferings from "@/eduweb/components/ai-offerings"
+import AIIntegrations from "@/eduweb/components/ai-integrations"
+import AIHowItWorks from "@/eduweb/components/ai-how-it-works"
+import AIUseCases from "@/eduweb/components/ai-use-cases"
+import PremiumFlashcards from "@/eduweb/components/premium-flashcards"
+import AICredibility from "@/eduweb/components/ai-credibility"
+import AICTA from "@/eduweb/components/ai-cta"
+import ScrollCounter from "@/eduweb/components/scroll-counter"
+import ComparisonTable from "@/eduweb/components/comparison-table"
+import AIFooter from "@/eduweb/components/ai-footer"
+import Navbar from "@/eduweb/components/navbar"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background dark">
       <Navbar />
-      <HeroSection />
-      <TrustStrip />
-      <LearningPaths />
-      <FeaturedContent />
-      <EducatorSection />
-      <CTASection />
-      <Footer />
-      {/* Added link to articles hub and dashboard */}
-      <div className="flex justify-center space-x-4 mt-8">
-        <Button asChild>
-          <Link href="/articles-hub">Articles Hub</Link>
-        </Button>
-        <Button asChild>
-          <Link href="/dashboard">Dashboard</Link>
-        </Button>
-      </div>
+      <AIHero />
+      <AITrustStrip />
+      <AIProblems />
+      <AIOfferings />
+      <AIIntegrations />
+      <AIHowItWorks />
+      <AIUseCases />
+      <PremiumFlashcards />
+      <AICredibility />
+      <ScrollCounter />
+      <ComparisonTable />
+      <AICTA />
+      <AIFooter />
     </main>
   )
 }
