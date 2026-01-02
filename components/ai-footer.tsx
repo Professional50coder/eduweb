@@ -71,7 +71,7 @@ export default function AIFooter() {
         </div>
 
         <div className="border-t border-border/50 pt-8 text-center text-sm text-white/60">
-          <p>© 2025 ai2easy4u. Building AI systems for makers and founders.</p>
+          <p>© 2026 ai2easy4u. Building AI systems for makers and founders.</p>
         </div>
       </div>
     </footer>
