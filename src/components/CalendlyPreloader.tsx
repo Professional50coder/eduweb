@@ -8,7 +8,7 @@ const CalendlyContext = createContext<{
 
 export const useCalendly = () => useContext(CalendlyContext);
 
-const CALENDLY_URL = 'https://calendly.com/raop4903/30min?hide_event_type_details=1&hide_gdpr_block=1&primary_color=dedbc8&background_color=000000&text_color=ffffff';
+const CALENDLY_URL = 'https://calendly.com/gopanihitansh5/30min?hide_event_type_details=1&hide_gdpr_block=1&primary_color=dedbc8&background_color=000000&text_color=ffffff';
 
 export const CalendlyPreloader = ({ children }: { children: React.ReactNode }) => {
   const containerRef = useRef<HTMLDivElement>(null);
